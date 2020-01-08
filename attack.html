@@ -5,7 +5,7 @@
 function boom(){
 var xmlhttp;
 xmlhttp=new XMLHttpRequest();
-xmlhttp.open("GET","http://172.16.1.65/");
+xmlhttp.open("GET","http://172.16.1.65/",true);
 xmlhttp.withCredentials = true;
 xmlhttp.send(); 
 //var str=xmlhttp.getAllResponseHeaders();
